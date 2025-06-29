@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h2 style="text-align: center;" class="Top">WELCOME TO AII</h2>
+        <H4 style="text-align: center;"> Make life easier for others who need a home</H4>
+        <form id="passwordForm" onsubmit="return validatePassword()">
+            <!---  <div class="Username"> <label for="Username">Username:</label></div>
+            <input type="text" name="Username" placeholder="Username">
+            <div class="Email"> <label for="Email">Email:</label></div>
+            <input type="text" name="Email" placeholder="Email">
+            <div class="Phone"> <label for="Phone Number">Phone number:</label></div>
+            <input type="number" name="Phone number" placeholder="Phone number" required> -->
+
+            <!-- <div class="Password"> -->
+            <label for="Password">Password:</label>
+            <!-- </div> -->
+            <input type="password" id="password" name="password" required>
+            <br>
+            <span id="error" style="color: red;"></span>
+            <br>
+            <!-- <div class="Submit">
+                <div class="checkbox">
+                    <input type="checkbox"> <label for="Checkbox">I am a Landlord or Real Estate Professional</label>
+                </div> -->
+
+            <button type="submit">CREATE ACCOUNT</button>
+        </form>
+        <h5>By creating an account i accept AII's <a href="#"> terms of use</a></h5>
+        </div>
+    </section>
+    <script src="AII.js"></script>
+    <!-- <form id="passwordForm" onsubmit="return validatePassword()">
+        <label for="Password">Password:</label>
+        <input type="password" id="password" name="Password" required> 
+        <br>
+        <span id="error" style="color: brown;"></span>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function validatePassword() {
+            const password = document.getElementById("password").value;
+            const error = document.getElementById("error");
+            const alphanumericRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])[A-Za-z0-9]{8,}$/;
+            if (!alphanumericRegex.test(password)) {
+                error.textContent = "password must be at least 8 characters longand contain both letters and numbers.";
+                return false;
+            }
+            error.textContent = "";
+            alert("Password is Valid!");
+            return true
+
+
+        }
+    </script> -->
+</body>
+
+</html>
